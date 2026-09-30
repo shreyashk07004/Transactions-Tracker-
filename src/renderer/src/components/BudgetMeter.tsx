@@ -78,7 +78,7 @@ export const BudgetMeter: React.FC<BudgetMeterProps> = ({
 
         {/* Animated fill using transform scaleX */}
         <motion.div
-          className="absolute inset-0 rounded-full origin-left relative overflow-hidden"
+          className="absolute inset-0 rounded-full origin-left overflow-hidden"
           initial={false}
           animate={{
             scaleX: scaleValue,
