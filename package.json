@@ -1,0 +1,43 @@
+{
+  "name": "spendledger",
+  "productName": "SpendLedger",
+  "version": "1.0.0",
+  "description": "Personal monthly transaction tracker desktop application",
+  "main": "./out/main/index.js",
+  "author": "SpendLedger",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "test": "vitest run",
+    "rebuild": "electron-vite build",
+    "start": "electron .",
+    "build": "npm run typecheck && npm run test && electron-vite build",
+    "build:win": "npm run build && electron-builder --win --x64"
+  },
+  "dependencies": {
+    "clsx": "2.1.1",
+    "date-fns": "4.4.0",
+    "lucide-react": "1.43.0",
+    "motion": "12.43.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "recharts": "3.10.1",
+    "tailwind-merge": "3.6.0",
+    "zod": "3.24.2",
+    "zustand": "5.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "@types/node": "22.13.10",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@vitejs/plugin-react": "5.2.0",
+    "electron": "38.8.6",
+    "electron-builder": "26.16.1",
+    "electron-vite": "4.0.1",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3",
+    "vite": "7.3.6",
+    "vitest": "3.2.7"
+  }
+}
